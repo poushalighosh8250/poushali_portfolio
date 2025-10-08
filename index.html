@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poushali Ghosh | IT student & a professionl artist Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="logo">Poushali <span>Ghosh</span></div>
+
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#my-work">My Work</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></div>
+
+    <button id="themeToggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Hi,  <span class="highlight">I'm 
+        Poushali Ghosh</span></h1>
+      <h2><span id="typing"></span></h2>
+      <p>I build responsive and creative web applications using modern technologies.</p>
+      <a href="#my-work" class="btn">View My Work</a>
+    </div>
+    <div class="hero-image">
+      <img src="poushali_photo.jpg" alt="Poushali Ghosh">
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about reveal">
+    <img src="poushali_photo.jpg" alt="About Poushali">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+Hi, I’m Poushali Ghosh, a final-year BCA student at Burdwan University. I’m passionate about technology, programming, and creative problem-solving, with strong communication skills that help me collaborate and learn fast.
+
+Beyond tech, I love baking and arts, which fuel my creativity and inspire me to think outside the box. I’m excited to kickstart my first professional journey and bring my skills, enthusiasm, and creativity to a dynamic team.
+      </p>
+      <a href="Poushali_CV.pdf" class="btn">Download CV</a>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+<section id="education" class="section reveal">
+  <h2>Education</h2>
+  <div class="timeline">
+
+    <div class="edu-card left">
+      <div class="edu-dot blue"><i class="fas fa-graduation-cap edu-icon"></i></div>
+      <div class="edu-content">
+        <h3>BCA (H), CRTI</h3>
+        <p>2022 - 2025 | 54%</p>
+        <button class="view-edu-btn" data-doc="#">View Certificate</button>
+        <button class="view-edu-btn" data-doc="139-3-32.pdf">View Result</button>
+      </div>
+    </div>
+
+    <div class="edu-card right">
+      <div class="edu-dot green"><i class="fas fa-school edu-icon"></i></div>
+      <div class="edu-content">
+        <h3>Class XII, WB Board</h3>
+        <p>2021 - 2022 | 85%</p>
+        <button class="view-edu-btn" data-doc="#">View Certificate</button>
+        <button class="view-edu-btn" data-doc="poushali_12th result.pdf">View Result</button>
+      </div>
+    </div>
+
+    <div class="edu-card left">
+      <div class="edu-dot orange"><i class="fas fa-school edu-icon"></i></div>
+      <div class="edu-content">
+        <h3>Class X, WB Board</h3>
+        <p>2019 - 2020 | 57%</p>
+        <button class="view-edu-btn" data-doc="#">View Certificate</button>
+        <button class="view-edu-btn" data-doc="poushali_10th result.pdf">View Result</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="eduModal" class="edu-modal">
+  <span class="close">&times;</span>
+  <iframe id="eduIframe" src="" frameborder="0"></iframe>
+</div>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="skills reveal">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-bar html" data-width="95%">
+        <div class="info"><i class="fab fa-html5 skill-icon"></i><span>HTML</span></div>
+        <div class="progress"><span></span></div>
+        <span class="skill-percent">0%</span>
+      </div>
+      <div class="skill-bar css" data-width="90%">
+        <div class="info"><i class="fab fa-css3-alt skill-icon"></i><span>CSS</span></div>
+        <div class="progress"><span></span></div>
+        <span class="skill-percent">0%</span>
+      </div>
+      <div class="skill-bar python" data-width="85%">
+        <div class="info"><i class="fab fa-python skill-icon"></i><span>Python</span></div>
+        <div class="progress"><span></span></div>
+        <span class="skill-percent">0%</span>
+      </div>
+      <div class="skill-bar arts" data-width="80%">
+        <div class="info"><i class="fas fa-paint-brush skill-icon"></i><span>Mehendi & Arts</span></div>
+        <div class="progress"><span></span></div>
+        <span class="skill-percent">0%</span>
+      </div>
+      <div class="skill-bar bakery" data-width="75%">
+        <div class="info"><i class="fas fa-bread-slice skill-icon"></i><span>Bakery</span></div>
+        <div class="progress"><span></span></div>
+        <span class="skill-percent">0%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MY WORK SECTION ===== -->
+<section id="my-work" class="projects reveal">
+  <h2>My Work</h2>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="bakery">Bakery</button>
+    <button class="filter-btn" data-category="arts">Arts / Drawings</button>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="projects-grid projects-container">
+
+    <!-- Bakery Work -->
+    <div class="project-card bakery" data-category="bakery">
+      <img src="488543761_122269212104222967_2065607532332631028_n.jpg" alt="Chocolate Cake">
+      <h3>Cake</h3>
+      <div class="project-actions">
+        <a href="https://www.facebook.com/share/17HsqXWJ2M/" target="_blank" class="btn view-btn">View on Facebook</a>
+        <a href="https://youtube.com/@poushalighosh5410?si=RFs-UCNCq6mc_5GA" target="_blank" class="btn view-btn">View on YouTube</a>
+        <a href="#orderForm" class="btn order-btn">Order Now</a>
+      </div>
+    </div>
+
+    <!-- Arts / Drawings -->
+    <div class="project-card arts" data-category="arts">
+      <img src="488705407_122269752908222967_79255140053183970_n.jpg" alt="Sketch Artwork">
+      <h3>Beautiful Sketch</h3>
+      <div class="project-actions">
+        <a href="https://www.facebook.com/share/17HsqXWJ2M/" target="_blank" class="btn view-btn">View on Facebook</a>
+        <a href="https://youtube.com/@poushalighosh5410?si=RFs-UCNCq6mc_5GA" target="_blank" class="btn view-btn">View on YouTube</a>
+        <a href="#orderForm" class="btn order-btn">Order Now</a>
+      </div>
+    </div>
+
+    <div class="project-card arts" data-category="arts">
+      <img src="548202722_1346471623801101_3175897022647502430_n.jpg" alt="Watercolor Painting">
+      <h3>Watercolor & Wall Painting</h3>
+      <div class="project-actions">
+        <a href="https://www.facebook.com/share/17HsqXWJ2M/" target="_blank" class="btn view-btn">View on Facebook</a>
+        <a href="https://youtube.com/@poushalighosh5410?si=RFs-UCNCq6mc_5GA" target="_blank" class="btn view-btn">View on YouTube</a>
+        <a href="#orderForm" class="btn order-btn">Order Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== ORDER FORM MODAL ===== -->
+<div id="order-form" class="order-modal">
+  <div class="order-modal-content">
+    <span class="order-close">&times;</span>
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="Your Phone Number" required>
+
+      <label for="item">Item / Artwork</label>
+      <input type="text" id="item" placeholder="Which item do you want?" required>
+
+      <label for="message">Message / Details</label>
+      <textarea id="message" rows="4" placeholder="Any additional details"></textarea>
+
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+  </div>
+</div>
+
+
+  <!-- ===== PROJECTS SECTION ===== -->
+ <section id="projects" class="projects reveal">
+  <h2>My Projects</h2>
+
+  <!-- ===== FILTER BUTTONS ===== -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="web">Web</button>
+    <button class="filter-btn" data-category="php">PHP</button>
+  </div>
+
+  <!-- ===== PROJECT GRID ===== -->
+  <div class="projects-grid projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card" data-category="web">
+      <img src="Screenshot 2025-10-06 210053.png" alt="Portfolio Website">
+      <h3>Portfolio Website</h3>
+      <p>A modern and animated personal portfolio site.</p>
+      <div class="project-actions">
+        <a href="https://github.com/poushalighosh8250" 
+           target="_blank" 
+           class="btn view-btn">View Project</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card" data-category="php">
+      <img src="6fa40dfb989e0a7ed40dbc9d9578fd03.jpg" alt="Restaurant POS-System">
+      <h3>Restaurant POS-System</h3>
+      <p>Restaurant menu and order management system.</p>
+      <div class="project-actions">
+        <a href="https://github.com/poushalighosh8250" 
+           target="_blank" 
+           class="btn view-btn">View Project</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== RESUME SECTION ===== -->
+
+<section id="resume" class="section reveal">
+  <h2>My Resume</h2>
+  
+  <div class="resume-container">
+    <div class="resume-card">
+      <div class="resume-thumbnail">
+        <img src="3782501.png" alt="Resume Preview" id="resumeThumb">
+      </div>
+      <div class="resume-content">
+        <h3>Poushali Ghosh</h3>
+        <p>IT student | Bekary and Arts & Mehendi</p>
+        <div class="resume-buttons">
+          <button class="btn view-resume-btn" id="viewResumeBtn">
+            <i class="fas fa-eye"></i> View Resume
+          </button>
+          <a href="Poushali_CV.pdf" download class="btn download-resume-btn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="resumeModal" class="resume-modal">
+    <div class="resume-modal-content">
+      <span class="close-resume">&times;</span>
+      <iframe src="Poushali_CV.pdf" frameborder="0"></iframe>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ===== CONTACT SECTION ===== -->
+<section id="contact" class="section contact reveal">
+  <h2>Contact</h2>
+  
+  <div class="contact-container">
+
+    <!-- Phone -->
+    <div class="contact-card">
+      <i class="fas fa-phone contact-icon"></i>
+      <div class="contact-info">
+        <h3>Phone</h3>
+        <p>8250703758</p>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="contact-card">
+      <i class="fas fa-envelope contact-icon"></i>
+      <div class="contact-info">
+        <h3>Email</h3>
+        <p><a href="mailto:poushalig825@gmail.com">poushalig8250@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- Location -->
+    <div class="contact-card">
+      <i class="fas fa-map-marker-alt contact-icon"></i>
+      <div class="contact-info">
+        <h3>Location</h3>
+        <p>Purba Bardhaman</p>
+      </div>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="contact-card">
+      <i class="fab fa-linkedin contact-icon"></i>
+      <div class="contact-info">
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/poushali-ghosh-1a9a16317" target="_blank">Profile</a></p>
+      </div>
+    </div>
+
+  </div>
+  <form id="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+  <p id="form-status"></p>
+</form>
+
+</section>
+
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Poushali Ghosh | All Rights Reserved</p>
+    <div class="social-links">
+      <a href="https://github.com/poushalighosh8250"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/poushali-ghosh-1a9a16317"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/share/17HsqXWJ2M/"><i class="fab fa-facebook"></i></a>
+      <a href="https://youtube.com/@poushalighosh5410?si=RFs-UCNCq6mc_5GA"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/butaiartgallery?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY"); 
+  })();
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
